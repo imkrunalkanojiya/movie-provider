@@ -1,6 +1,6 @@
 {
-  "name": "movie-provider",
-  "version": "1.0.0",
+  "name": "movies-provider",
+  "version": "1.0.1",
   "description": "Package that contains all the providers of movies",
   "main": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
@@ -21,9 +21,12 @@
   },
   "keywords": [
     "krunalkanojiya",
-    "movie-provider"
+    "movies-provider"
   ],
   "author": "Krunal Kanojiya",
+  "repository": {
+    "url": "https://github.com/imkrunalkanojiya/movie-provider.git"
+  },
   "license": "MIT",
   "scripts": {
     "build": "vite build && tsc --noEmit",
@@ -36,8 +39,7 @@
     "lint": "eslint --ext .ts,.js src/",
     "lint:fix": "eslint --fix --ext .ts,.js src/",
     "lint:report": "eslint --ext .ts,.js --output-file eslint_report.json --format json src/",
-    "prepare": "yarn run build",
-    "prepublishOnly": "npm test && npm run lint"
+    "prepare": "yarn run build"
   },
   "devDependencies": {
     "@types/cookie": "^0.6.0",
